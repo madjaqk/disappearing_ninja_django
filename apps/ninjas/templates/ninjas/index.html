@@ -1,0 +1,11 @@
+<html>
+<head>
+	<title>Disappearing Ninja</title>
+	{% load staticfiles %}
+</head>
+<body>
+	{% for img_src in images %}
+		<img src='{% static img_src %}'>
+	{% endfor %}
+</body>
+</html>
